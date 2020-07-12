@@ -53,11 +53,11 @@ class Song
     
         artist_hash = {}
     @@artists.each_with_index do |artist, count|
-      if !artist_hash[genre]
+      if !artist_hash[artist]
         count = 0
-        artist_hash[genre] = count += 1
-      elsif artist_hash.include?(genre)
-         artist_hash[genre] = count += 1
+        artist_hash[artist] = count += 1
+      elsif artist_hash.include?(artist)
+         artist_hash[artist] = count += 1
       end
     end  
     artist_hash
