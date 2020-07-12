@@ -40,7 +40,8 @@ class Song
       unless genre_hash[genre]
         genre_hash[genre] = count += 1
       end
-    end    
+    end  
+    genre_hash
   end
   
   def artist_count
