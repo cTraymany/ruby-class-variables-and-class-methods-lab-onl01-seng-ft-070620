@@ -42,7 +42,7 @@ class Song
         count = 0
         genre_hash[genre] = count += 1
       elsif genre_hash.include?(genre)
-         count += 1
+         genre_hash[genre] = count += 1
       end
     end  
     
