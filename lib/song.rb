@@ -48,9 +48,6 @@ class Song
   end
   
   def artist_count
-    @@artists
-    
-    
         artist_hash = {}
     @@artists.each_with_index do |artist, count|
       if !artist_hash[artist]
