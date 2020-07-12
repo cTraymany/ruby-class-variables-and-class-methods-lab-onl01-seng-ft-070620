@@ -34,7 +34,7 @@ class Song
     @@artists.uniq
   end
   
-  def genre_count
+  def self.genre_count
     genre_hash = {}
     @@genres.each_with_index do |genre, count|
       unless genre_hash[genre]
