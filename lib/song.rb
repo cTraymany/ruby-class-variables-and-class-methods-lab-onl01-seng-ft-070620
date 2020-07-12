@@ -39,7 +39,7 @@ class Song
     @@genres.each_with_index do |genre, count|
       if !genre_hash[genre]
         genre_hash[genre] = count
-      elsif genre_hash[genre].include?(genre)
+      elsif genre_hash.include?(genre)
          count += 1
       end
     end  
