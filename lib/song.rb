@@ -42,8 +42,7 @@ class Song
       if !genre_hash[genre]
         genre_hash[genre] = count += 1
       elsif genre_hash.include?(genre)
-         genre_hash[genre] = count += 1
-         binding.pry
+         count += 1
       end
     end  
     
