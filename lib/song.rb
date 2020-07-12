@@ -43,6 +43,7 @@ class Song
         genre_hash[genre] = count += 1
       elsif genre_hash.include?(genre)
          genre_hash[genre] = count += 1
+         binding.pry
       end
     end  
     
