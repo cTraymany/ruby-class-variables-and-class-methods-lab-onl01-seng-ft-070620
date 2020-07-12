@@ -38,10 +38,9 @@ class Song
     genre_hash = {}
     @@genres.each_with_index do |genre, count|
       unless genre_hash[genre]
-        count = 0
-        genre_hash[genre] = count += 1
-        binding.pry
+        genre_hash[genre] = count
       end
+      genre_hash[genre] = count += 1
     end  
     genre_hash
   end
