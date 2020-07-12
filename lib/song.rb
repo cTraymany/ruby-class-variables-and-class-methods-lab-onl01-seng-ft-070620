@@ -40,6 +40,7 @@ class Song
       unless genre_hash[genre]
         count = 0
         genre_hash[genre] = count += 1
+        binding.pry
       end
     end  
     genre_hash
